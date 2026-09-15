@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><style>
+/* Базовые CSS-переменные шаблона чека: размеры зон, типографика и цветовые токены. */
+:root {
+    --header-height: 8%;
+    --footer-height: 8%;
+    --font-size-base: 30px;
+    --font-size-small: 65%;
+    --font-size-large: 150%;
+    --font-size-medium: 100%;
+    --bg-header: var(--color);
+    --color: #000000;
+    --color-swapped: #000000;
+    --bg-main: #FFFFFF;
+    --bg-footer: var(--color);
+    --bg-button: var(--color);
+    --text-color: black;
+}
+
+/* Единая модель размеров для предсказуемой верстки таблиц и панелей. */
+* {
+    box-sizing: border-box;
+}
+
+/* Общие параметры страницы: шрифт, нулевые отступы и цвет текста по умолчанию. */
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+}
+
+table {
+    width: 100%;
+}
+
+/* Основная прокручиваемая зона со строками чека. */
+.main {
+    position: absolute;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: var(--footer-height);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    background: var(--bg-main);
+}
+
+.header {
+    background: #FAE86E;
+    color: black;
+    position: fixed;
+    left: 0;
+    right: 2%;
+    top: 0;
+    font-size: 130%;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    max-height: 5%;
+}
+
+.footer {
+    background: #43914F;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 2%;
+    bottom: 1%;
+    font-size: 150%;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    max-height: 5%;
+}
+
+.main-table {
+    position: fixed;
+    text-align: center;
+    font-size: 130%;
+    left: 0;
+    right: 2%;
+    top: 5%;
+    width: 100%;
+    max-height: 5%
+}
+
+
+/* Корневой контейнер, растянутый на всю площадь экрана покупательского дисплея. */
+.layout-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Область с таблицей чека и итогами без рекламной панели. */
+.content-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    font-size: var(--font-size-small);
+}
+
+/* Контейнер рекламной области. */
+.ad-panel {
+    position: absolute;
+    overflow: hidden;
+}
+
+/* Центрирование рекламного изображения внутри панели. */
+.ad-panel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+</style></head><body>
+
+</body></html>

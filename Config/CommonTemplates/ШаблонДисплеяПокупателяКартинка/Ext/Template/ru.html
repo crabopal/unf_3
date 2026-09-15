@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><style>
+/* Базовая CSS-переменная с основным размером текста для шаблона с картинкой. */
+:root {
+    --font-size-base: 16px;
+}
+
+/* Единая модель расчета размеров для стабильной компоновки элементов. */
+* {
+    box-sizing: border-box;
+}
+
+/* Общие настройки страницы: шрифт, нулевые отступы и базовый размер текста. */
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    font-size: var(--font-size-base);
+}
+
+/* Базовое поведение изображений: масштабирование по контейнеру без искажения. */
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Внешний вид кнопок, которые могут динамически добавляться в шаблон. */
+button {
+    border-radius: 10px;
+    background-color: #FAE86E;
+    padding: 20px 20px;
+}
+
+/* Корневой контейнер, занимающий весь экран дисплея покупателя. */
+#layout-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Основная зона контента без рекламного блока. */
+#content-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/* Контейнер рекламной области; скрыт, пока не задан режим с рекламой. */
+#ad-panel {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* Центрирование рекламного изображения в пределах рекламной панели. */
+#ad-panel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Центральная прокручиваемая область с текстом, картинкой и кнопками. */
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    overflow: auto;
+}
+
+/* Текстовый информационный блок; скрыт до заполнения содержимым. */
+#info-block {
+    display: none;
+    font-size: 200%;
+}
+
+/* Контейнер основного изображения; скрывается, если картинка не используется. */
+#image-block {
+    display: none;
+}
+
+/* Ограничение размеров изображения по доступной области контейнера. */
+#image-block img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Отступ сверху перед набором кнопок действий. */
+#buttons-block {
+    margin-top: 10px;
+}
+
+/* Размещение рекламы справа при горизонтальной ориентации экрана. */
+#layout-wrapper.horizontal #ad-panel {
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+}
+
+/* Освобождение места под правую рекламную колонку. */
+#layout-wrapper.horizontal #content-panel {
+    right: 30%;
+}
+
+/* Размещение рекламы внизу при вертикальной ориентации экрана. */
+#layout-wrapper.vertical #ad-panel {
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25%;
+}
+
+/* Уменьшение основной зоны по высоте под нижнюю рекламную область. */
+#layout-wrapper.vertical #content-panel {
+    bottom: 25%;
+}
+</style></head><body>
+
+<!-- Корневой DOM-контейнер шаблона. На него может устанавливаться класс ориентации экрана. -->
+<div id="layout-wrapper">
+<!-- Основная область контента, занимающая весь экран кроме рекламной панели. -->
+<div id="content-panel">
+<!-- Центральный прокручиваемый контейнер для информации, изображения и кнопок. -->
+<div id="main">
+<!-- Блок показа основной картинки. Отображается только если изображение задано из кода. -->
+<div id="image-block"><img src="" alt=""></img></div>
+</div>
+</div>
+<!-- Отдельный рекламный блок с единственным изображением, выводимым при наличии рекламы. -->
+<div id="ad-panel"><img id="ad-image" src="" alt=""></img></div>
+</div>
+
+</body></html>

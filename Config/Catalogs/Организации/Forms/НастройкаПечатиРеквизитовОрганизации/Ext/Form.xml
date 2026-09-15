@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранить" id="44">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сохранить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить и закрыть</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="45"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПечатьРеквизитов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа печать реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПечатьРеквизитовРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиРеквизитов" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки реквизитов</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиРеквизитовРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<InputField name="РасчетныеСчета" id="50">
+							<DataPath>РасчетныеСчета</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Владелец</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Организация</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="РасчетныеСчетаКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="РасчетныеСчетаРасширеннаяПодсказка" id="52"/>
+							<Events>
+								<Event name="OnChange">РасчетныеСчетаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="КомпактноеОтображениеСчетов" id="56">
+							<DataPath>КомпактноеОтображениеСчетов</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="КомпактноеОтображениеСчетовКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="КомпактноеОтображениеСчетовРасширеннаяПодсказка" id="58"/>
+							<Events>
+								<Event name="OnChange">КомпактноеОтображениеСчетовПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияОтступ" id="61">
+							<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="63"/>
+						</LabelDecoration>
+						<Table name="НастройкиРеквизитов" id="6">
+							<Representation>Tree</Representation>
+							<SelectionMode>SingleRow</SelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>НастройкиРеквизитов</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>ClearTableMarksAppearance</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>CommandBar</SearchStringLocation>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<ContextMenu name="НастройкиРеквизитовКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="НастройкиРеквизитовКоманднаяПанель" id="7">
+								<ChildItems>
+									<ButtonGroup name="НастройкиРеквизитовФлажки" id="70">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройки реквизитов флажки</v8:content>
+											</v8:item>
+										</Title>
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="НастройкиРеквизитовФлажкиРасширеннаяПодсказка" id="71"/>
+										<ChildItems>
+											<Button name="НастройкиРеквизитовУстановитьФлажки" id="76">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьФлажки</CommandName>
+												<ExtendedTooltip name="НастройкиРеквизитовУстановитьФлажкиРасширеннаяПодсказка" id="77"/>
+											</Button>
+											<Button name="НастройкиРеквизитовСнятьФлажки" id="78">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СнятьФлажки</CommandName>
+												<ExtendedTooltip name="НастройкиРеквизитовСнятьФлажкиРасширеннаяПодсказка" id="79"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="НастройкиРеквизитовПеремещениеСтрок" id="64">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройки реквизитов перемещение строк</v8:content>
+											</v8:item>
+										</Title>
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="НастройкиРеквизитовПеремещениеСтрокРасширеннаяПодсказка" id="65"/>
+										<ChildItems>
+											<Button name="НастройкиРеквизитовПереместитьВверх" id="80">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.НастройкиРеквизитов.StandardCommand.MoveUp</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="НастройкиРеквизитовПереместитьВверхРасширеннаяПодсказка" id="81"/>
+											</Button>
+											<Button name="НастройкиРеквизитовПереместитьВниз" id="82">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.НастройкиРеквизитов.StandardCommand.MoveDown</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="НастройкиРеквизитовПереместитьВнизРасширеннаяПодсказка" id="83"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Popup name="НастройкиРеквизитовЗаполнить" id="86">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="НастройкиРеквизитовЗаполнитьРасширеннаяПодсказка" id="87"/>
+										<ChildItems>
+											<Button name="НастройкиРеквизитовПоУмолчанию" id="42">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПоУмолчанию</CommandName>
+												<ExtendedTooltip name="НастройкиРеквизитовПоУмолчаниюРасширеннаяПодсказка" id="43"/>
+											</Button>
+											<Popup name="ГруппаЗаполнитьПоДругимОрганизациям" id="84">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>по другой организации...</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ГруппаЗаполнитьПоДругимОрганизациямРасширеннаяПодсказка" id="85"/>
+											</Popup>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НастройкиРеквизитовРасширеннаяПодсказка" id="9"/>
+							<SearchStringAddition name="НастройкиРеквизитовСтрокаПоиска" id="10">
+								<AdditionSource>
+									<Item>НастройкиРеквизитов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиРеквизитовСтрокаПоискаКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="НастройкиРеквизитовСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкиРеквизитовСостояниеПросмотра" id="16">
+								<AdditionSource>
+									<Item>НастройкиРеквизитов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиРеквизитовСостояниеПросмотраКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="НастройкиРеквизитовСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкиРеквизитовУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>НастройкиРеквизитов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиРеквизитовУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="НастройкиРеквизитовУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="DragCheck">НастройкиРеквизитовПроверкаПеретаскивания</Event>
+								<Event name="DragStart">НастройкиРеквизитовНачалоПеретаскивания</Event>
+								<Event name="OnChange">НастройкиРеквизитовПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="НастройкиРеквизитовПечатать" id="22">
+									<DataPath>НастройкиРеквизитов.Печатать</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.PrintImmediately</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="НастройкиРеквизитовПечататьКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="НастройкиРеквизитовПечататьРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="OnChange">НастройкиРеквизитовПечататьПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="НастройкиРеквизитовПредставление" id="19">
+									<DataPath>НастройкиРеквизитов.Представление</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизит</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="НастройкиРеквизитовПредставлениеКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НастройкиРеквизитовПредставлениеРасширеннаяПодсказка" id="21"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<SpreadSheetDocumentField name="РеквизитыОрганизации" id="1">
+					<DataPath>РеквизитыОрганизации</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="РеквизитыОрганизацииКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="РеквизитыОрганизацииРасширеннаяПодсказка" id="3"/>
+				</SpreadSheetDocumentField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НастройкиРеквизитов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Представление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Печатать" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печатать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Реквизит" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Группа" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяНабораСведений" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя набора сведений</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Организация" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РеквизитыОрганизации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСведенийОбОрганизации" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес сведений об организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбъектыПечати" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты печати</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="РасчетныеСчета" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расчетные счета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.БанковскиеСчета</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="КомпактноеОтображениеСчетов" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компактное отображение счетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьФлажки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьФлажки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоУмолчанию" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоУмолчанию</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="Сохранить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Сохранить</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+</Form>

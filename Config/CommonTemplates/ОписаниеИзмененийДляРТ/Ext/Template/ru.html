@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html><html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Новое в версии 1C:Розница 3.0.14.143</title><style>
+		body {
+			margin: 0px;
+			font-family: 'Roboto', Arial, sans-serif;
+			font-size: 12pt;
+		}
+
+		h1 {
+			text-align: center;
+			padding-bottom: 0px;
+			line-height: 24px;
+			background-color: var(--colorGray20);
+			margin: 24px 0px 16px;
+			padding-left: 0px;
+			padding-right: 0px;
+			font-size: 18pt;
+			font-weight: bold;
+			padding-top: 0px;
+		}
+
+		h2 {
+			padding-bottom: 6px;
+			line-height: 16px;
+			margin: 12px 0px 12px;
+			padding-left: 0px;
+			padding-right: 0px;
+			font-size: 13pt;
+			font-weight: bold;
+			padding-top: 6px;
+		}
+
+		h3 {
+			line-height: 32px;
+			margin: 0px 0px 12px;
+			color: var(--colorText80);
+			font-size: 16pt;
+		}
+
+		h4 {
+			line-height: 21px;
+			font-style: italic;
+			margin: 0px;
+			color: var(--colorText80);
+			font-size: 16pt;
+			font-weight: normal;
+		}
+
+		h5 {
+			padding-bottom: 0px;
+			line-height: 36px;
+			margin: 12px 0px 12px;
+			padding-left: 0px;
+			padding-right: 0px;
+			color: var(--colorText80);
+			font-size: 23pt;
+			padding-top: 0px;
+		}
+
+		h6 {
+			padding-bottom: 0px;
+			line-height: 20px;
+			margin: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
+			color: var(--colorText80);
+			font-size: 15pt;
+			font-weight: bold;
+			padding-top: 0px;
+		}
+
+		p {
+			line-height: 18pt;
+			margin: 0px 0px 14px;
+		}
+
+		li {
+			margin: 0px 0px 6px;
+		}
+
+		.header {
+			padding-bottom: 0.5cm;
+			padding-left: 1cm;
+			padding-right: 1cm;
+			padding-top: 0.5cm;
+		}
+
+		.red-line {
+			border-top: var(--colorText40) 3px solid;
+		}
+
+		.thin-red-line {
+			border-top: #cfcfd1 1px solid;
+		}
+
+		img {
+			max-width: 870px;
+
+		}
+
+		table {
+			page-break-inside: avoid;
+		}
+
+		.content {
+			max-width: 870px;
+			margin: auto;
+		}
+
+		.section-header {
+			overflow: auto
+		}
+
+		.stayhome-left {
+			float: left;
+		}
+
+		.stayhome-left img {
+			display: block
+		}
+
+		.stayhome-right {
+			margin-left: 120px
+		}
+
+		.table-section {
+			border: 0px;
+			border-spacing: 0px;
+			padding: 0px;
+			width: fit-content;
+		}
+
+		.td-top {
+			vertical-align: top;
+		}
+
+		.td-top-width {
+			vertical-align: top;
+			width: fit-content;
+		}
+	</style></head><body>
+	<div class="content">
+		<div class="header">
+			<table class="tableContent" style="max-width: 1200px; min-width: 300px; width: 100%; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0;" border="0" width="0" cellpadding="0" align="center"><tbody><tr><td><img width="60" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABXCAMAAAAqEHtbAAADAFBMVEX/OQD/QgD/Qgj/SgD/Sgj/ShD/UgD/Ugj/UhD/Uhj/WgD/Wgj/WhD/Whj/WiH/YyH/Yyn/YzH/ayn/azH/azn/cyn/czH/czn/c0L/c0r/ezH/ezn/e0L/e0r/e1L/hEr/hFL/jFL/jFr/jGP/jHP/lEr/lFL/lGP/lGv/lHv/nFr/nGP/nHP/nHv/pUr/pVr/pWP/pXv/rWP/rWv/rYT/rYz/tQD/tQj/tVr/tWP/tWv/tYz/tZT/taX/vQD/vQj/vRD/vRj/vSn/vTH/vTn/vUr/vVL/vWv/vXP/vXv/vZz/vaX/xgD/xgj/xhD/xhj/xiH/xin/xjH/xjn/xkL/xkr/xlL/xlr/xmv/xnv/xoT/xoz/xqX/xq3/xrX/zgj/zhD/zhj/ziH/zin/zjH/zjn/zkL/zkr/zlL/zlr/zmP/zmv/zoT/zoz/zpT/zrX/zr3/1iH/1in/1jH/1jn/1kL/1kr/1lL/1lr/1mP/1mv/1nP/1nv/1oT/1oz/1pT/1r3/1sb/3kL/3kr/3lL/3lr/3mP/3mv/3nP/3nv/3oT/3oz/3pT/3pz/3qX/3q3/3s7/3tb/3t7/51L/51r/52P/52v/53P/53v/54T/54z/55T/55z/56X/563/59b/597/73P/73v/74T/74z/75T/75z/76X/763/77X/773/78b/787/79b/797/7+f/7+//95T/95z/96X/963/97X/973/98b/987/99b/997/9+f/9+//9/f//63//7X//8b//97//+f//+////f///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4Bpp9AAABAHRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////////////////////+f5eOgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+kLERQFEvcLb6AAAAAHdEVYdEF1dGhvcgCprsxIAAAADHRFWHREZXNjcmlwdGlvbgATCSEjAAAACnRFWHRDb3B5cmlnaHQArA/MOgAAAA50RVh0Q3JlYXRpb24gdGltZQA19w8JAAAACXRFWHRTb2Z0d2FyZQBdcP86AAAAC3RFWHREaXNjbGFpbWVyALfAtI8AAAAIdEVYdFdhcm5pbmcAwBvmhwAAAAd0RVh0U291cmNlAPX/g+sAAAAIdEVYdENvbW1lbnQA9syWvwAAAAZ0RVh0VGl0bGUAqO7SJwAADINJREFUaIGdmgl3G9UVgCVkxodDSMlCkpa4WWgLlACnFORTSLWZA5QQa2YkE7b0tLE0I8kEAomt1Qk+jm1tqQMH8CabFOIolhRMScliOy2NPf+r975lFi2OnffGQozk+829993lvdimNY5KqVhda3Ifx8XDKy0+WW/YGu6UT7ucTtfpcrNvn9orCPvr7n1z5NChO5ulTAMDh2uq4buLwHA42n8w3br0hx0OQRAubpJSPep0kdkEcxgYDofwpoF9sh25wpbN6jLqJISmmMVHUKSwj///8S0E6xB23wPSQPmUEZpijhOp/MlfQiZewrObpKyecOoYt9M1Xfft/YgRPiPvjwgOqopD+GazupzmmrjcMOoxi+348C/i20vMWhsxWHO/IKPT7YFxtA7zrMAds4faCx11atOU2t8IphMUAYjX47ZiVlCZR+HNKUOVvfeENMZLCVWhDI/X6/d2z1g+fgKUwYjZx70iPLx4HxTtigUiev3z5k+HUPZFbVHXZAP2akbRrrhdHjcyAOITJa9o0QZiRvhYe5N5RdiyEUgzilYGVbweYHgl0SdJknjF9OFBAaP/Ceb4fZc2AmlK0cpHibUknFKXLEkmDKQZ4SVtu4Bj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"></img></td>
+						<td>
+							<h6>1C:Предприятие 8, типовая конфигурация</h6>
+							<h5>Розница, редакция 3.0</h5>
+						</td>
+					</tr></tbody></table><h3>Новое в версии 3.0.14.143</h3>
+
+							<div class="content">
+				
+			<h1>Деньги</h1>
+					
+			<h2>Прием оплаты цифровыми рублями в рознице</h2>
+			<p>Поддержали прием оплаты цифровыми рублями от физических лиц на рабочем месте кассира (РМК) и с использованием документа "Чек ККМ". 
+			Цифровой рубль – это новая форма национальной валюты, выпускается Банком России и используется наравне с наличными и безналичными рублями. Понятие цифрового рубля, регулирование его обращения и использования введено Федеральными законами от 24.07.2023 №339-ФЗ и №340-ФЗ. 
+			Подробнее об учете операций с цифровым рублем можно узнать на <a href="https://its.1c.ru/db/hoosn#content:1041:hdoc">сайте 1С:ИТС</a>.
+			</p><p>Для начала приема оплаты от физических лиц необходимо обратиться в банк и 
+			открыть счет цифрового рубля. 
+			На сегодняшний момент оплату цифровым рублем поддерживают: Банк Точка, Банк Русский Стандарт, Райффайзенбанк 
+			и платежный агрегатор PayMaster. 
+			Список банков будет расширяться. 
+			Для оплаты клиент сканирует универсальный QR-код и оплачивает покупку цифровым рублем в приложении банка.</p>
+
+			<h2>
+			Загрузка выписки банка
+			с оплатой цифровым рублем через эквайринг</h2>
+			<p>
+			Появилась возможность отразить прием оплаты от физических лиц при оплате 
+			цифровым рублем по схеме эквайринга. Для этого добавили тип способа оплаты 
+			"Цифровой рубль". При загрузке выписки банка с оплатой цифровым рублем 
+			создается поступление на счет с видом операции "Отчет эквайринга". 
+			</p>
+			<p>
+			Узнать о работе с цифровым рублем в программе можно в
+			<a href="https://its.1c.ru/db/metod81#content:8759:hdoc:3">статье</a>.</p>
+
+
+
+			<h1>Подключаемое оборудование</h1>
+			<h2>Новые возможности:</h2>
+			<ul><li>Добавлена поддержка оплаты на эквайринговых терминалах с помощью универсального платежного кода (УПК) и цифрового рубля.</li>
+			<li>В генерации изображений штрихкодов добавлена возможность формирования QR-кода УПК в соответствии со спецификацией НСПК.</li>
+			<li>Компонента генерации штрихкода обновлена с версии 10.0.12.9 до версии 10.0.13.7.</li>
+			<li>Добавлена возможность генерации изображения в формате SVG.</li>
+			</ul><h2>Изменения драйверов:</h2>
+			<ul><li>"1С:Эквайринговые терминалы Сбербанк 2.Х" обновлен до версии 2.8.3.3.
+				<ul><li>Добавлена поддержка оплаты с помощью УПК и цифрового рубля.</li>
+				<li>Драйвер соответствует требованиям к разработке драйверов подключаемого оборудования версии 4.8.</li>
+				</ul></li>
+			<li>"РР-Электро:ККТ с передачей данных в ОФД" обновлен до версии 6.19.0.35.</li>
+			<li>"КАСТОМ:ККТ с передачей данных в ОФД" обновлен до версии 4.7.0.3.</li>
+			<li>"АТОЛ:ККТ с передачей данных в ОФД 10.10.9.х" обновлен до версии 10.10.9.0.</li>
+			<li>"Посцентр:ККТ с передачей данных в ОФД NG" обновлен до версии 2.11.0.324.</li>
+			<li>"Посцентр:ККТ с передачей данных в ОФД" обновлен до версии 5.21.0.1287.</li>
+			<li>"MERTECH:Промышленные сканеры штрихкода" обновлен до версии 1.0.73.</li>
+			</ul><h2>Изменение состава поставки:</h2>
+			<ul><li>"WNJI:ККТ с передачей данных в ОФД (54-ФЗ)" перенесен из перечня "снят с поддержки" в перечень оборудования, удаленного из поставки библиотеки.</li>
+			</ul></div>
+
+			<h3>Новое в версии 3.0.14.140</h3>
+
+			<h1>Электронный документооборот</h1>
+			<h2>Электронные экспедиторские документы</h2>
+			<p>Добавили возможность создавать, подписывать и отправлять в электронном виде: поручение экспедитору (ЭПЭ), экспедиторскую расписку (ЭЭР), складскую расписку (ЭСР). Подробнее о работе с документами можно узнать в
+			<a href="https://its.1c.ru/db/epdmob#content:189:hdoc">статьях на 1С:ИТС</a>.</p>
+
+			<h1>Проще и удобнее</h1>
+			<h2>Настройка отображения содержания документов в списке</h2>
+			<p>
+			Теперь можно выбрать, как просматривать таблицу товаров или услуг в списке
+			документов: справа или внизу списка. В варианте отображения "Под списком"
+			отображается больше данных таблицы, а в правой панели - итоговые сведения о документе: дата, состояние отгрузки и оплаты, сумма документа.
+			Переключение доступно в персональных настройках списка, по умолчанию сохранили текущее положение в правой панели. Гибкие настройки отображения позволят видеть больше информации о текущем документе из списка без открытия формы.
+			</p>
+
+			<h3>Новое в версии 3.0.14.123</h3>
+
+			<h2>Операции с цифровым рублем</h2>
+			<p>Поддержали операции с цифровым рублем. 
+			Согласно Федеральному закону от 23.07.2025 N 248-ФЗ компании с выручкой за 2025 год более 120 миллионов рублей и обслуживанием по состоянию на 1 января 2026 года в <a href="https://cbr.ru/banking_sector/credit/SystemBanks.html/">системно значимом 
+			банке</a> должны обеспечить с 1 сентября 2026 года возможность приема от 
+			юридических лиц цифровых рублей в счет оплаты товаров, работ и услуг. 
+			Для этого в карточках организации и контрагентов появилась возможность создать кошелек цифрового рубля. По счету цифрового рубля можно создавать платежные поручения, поступления на счет и расходы со счета, загружать банковские выписки. 
+			Для платежных поручений есть ограничение по виду операций: цифровой рубль можно использовать для оплаты поставщику, покупателю (возврат), прочих расчетов с контрагентами или переводов на другой счет внутри компании. 
+			Все операции автоматически отражаются в учете и отчетности, сохраняя прозрачность и безопасность расчетов.</p>
+
+			<h3>Новое в версии 3.0.14.115</h3>
+
+			<h1>Электронный документооборот</h1>
+			<p>В мобильном клиенте для Android появилась возможность подписания ключом 
+			электронной подписи, размещенном на активном носителе Рутокен. Сертификаты 
+			с Рутокена отображаются в списке как размещенные в личном 
+			хранилище и доступны для выбора при подписании, шифровании, расшифровке и 
+			проверке сертификатов.</p>
+
+			<h1>Подключаемое оборудование</h1>
+			<p>Изменен состав поставляемых драйверов. Добавлены новые драйверы:</p>
+			<ul><li>"1С:Устройство распознавания" версии 1.0.0.5.</li>
+				<li>"MERTECH:Промышленные сканеры штрихкода" версии 1.0.72.</li>
+			</ul><p>Обновлены драйверы: </p>
+			<ul><li>"1С:Сканеры штрихкода" до версии 10.6.7.5.</li>
+				<li>"1С:Дисплей покупателя" версии 5.1.5.2.</li>
+				<li>"1С:Принтер чеков" до версии 5.1.3.10.</li>
+				<li>"1С:Электронные весы (Native Api)" до версии 
+				2.1.3.7.</li>
+				<li>"АТОЛ:Устройства ввода данных ТСД" до версии 
+				2.0.1.</li>
+				<li>"АТОЛ:Драйвер платежного ядра АТОЛ Пэй" до 
+				версии 1.0.12.</li>
+			</ul><p>Удалены из поставки библиотеки, ранее снятые с поддержки:</p>
+				<ul><li>mPos2can:Поддержка 2can эквайринга</li>
+				<li>iboxPro:Поддержка mPos эквайринга</li>
+				<li>Дримкас:ККТ с передачей данных в ОФД Вики Принт (ФФД 1.2).</li>
+				<li>Счетмаш:ККТ с передачей данных в ОФД (54-ФЗ).</li>
+				<li>ШТРИХ-М:ККТ с передачей данных в ОФД (ФФД 1.2).</li>
+				<li>ШТРИХ-М:ККТ с передачей данных в ОФД (ФФД 1.2) 5.17.</li>
+				<li>ШТРИХ-М:Платежный терминал Yarus.</li></ul><p>Сняты с поддержки следующие драйверы:</p><ul><li>ИНПАС:Эквайринговые терминалы UNIPOS(ФЗ-491).</li>
+				<li>WNJI:ККТ с передачей данных в ОФД (54-ФЗ).</li>
+				<li>АТОЛ:Весы c печатью этикеток 8.X.</li>
+				<li>АТОЛ:Дисплеи покупателя 8.X.</li>
+				<li>АТОЛ:Сканеры штрихкода 8.X.</li>
+				<li>АТОЛ:Считыватели магнитных карт 8.X.</li>
+				<li>АТОЛ:Терминалы сбора данных Mobile Logistics 8.Х.</li>
+				<li>АТОЛ:Электронные весы 8.Х.</li>
+				<li>Версия-Т:ККТ с передачей данных в ОФД (54-ФЗ).</li>
+				<li>ИСКРА:ККТ с передачей данных в ОФД (ФФД 1.2).</li>
+				<li>Гексагон:Терминалы сбора данных Goods.</li>
+				<li>Сервис-Плюс:Весы с печатью этикеток.</li>
+				<li>Сервис-Плюс:Электронные весы.</li>
+				<li>1С-Рарус:Дисплеи покупателя</li>.
+				</ul><p></p></div>
+
+			<h3>Новое в версии 3.0.14.108</h3>
+			
+			<h1>Работа над качеством</h1>
+
+			<p>Обновление направлено на повышение надежности приложения</p>
+				<br><h3>Новое в версии 3.0.14.100</h3>
+
+<h3 style="border-top:3px solid #313138;padding-top:12px; line-height:120%" dir="ltr">
+РМК на кассах самообслуживания. Платежный Сервис "Яндекс Пэй". Подтверждение скидок 
+через МАХ. РМК в мобильном клиенте. Монитор состояния РМК. Электронные 
+перевозочные документы (ЭПД)</h3>
+<p><img border="0" src="data:image/png;base64,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"></img>    
+<img border="0" src="data:image/png;base64,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" width="385" height="235"></img></p>
+	<p>Подробное описание новых возможностей версии 3.0.14 конфигурации "Розница" приведено на <b>
+<a target="_blank" href="https://its.1c.ru/db/updinfo#content:2762:hdoc">сайте ИТС</a></b>.</p>
+	
+	
+	
+<h1>Цены и номенклатура</h1>	
+
+<h2>Новая печатная форма "Переоценка товаров" </h2>
+<p>Контролировать изменение цены стало проще и быстрее с новой печатной формой 
+"Переоценка товара". Вывести на печать ее можно из документа "Установка цен". В 
+форме отразится старая и новая цена, а также отклонение стоимости по каждому 
+виду цен.</p>
+
+<h2>Установка цен на основании документов "Заказ поставщику" и "Комплектация"</h2>
+<p>Ускоряем ценообразование с новой возможностью заполнения документа "Установка 
+цен" на основании "Заказа поставщику" или "Комплектации". </p>
+
+<h2>Рабочее место "Номенклатура" </h2>
+<p>Стало удобнее подбирать товары в корзину. Рабочее место "Номенклатура" стало более компактным, гибким и удобным. Правую 
+и нижнюю панели теперь можно растягивать. Отображение вкладки "Остатки", как и отображение вкладки "Корзина", можно отключить по кнопке "Настройки".</p>
+
+
+<h1>Продажи</h1>
+<h2>Интеграция с платежным сервисом "Яндекс Пэй" в онлайн-заказах 
+</h2>
+<p>Оплатить онлайн-заказы теперь можно с помощью сервиса Яндекс Пэй. Создать 
+такой заказ можно из документов "Заказ покупателя" или "Счет на оплату". 
+Проведенная оплата учитывается документом "Оплата платежной картой", на основании 
+которого можно оформить и возврат оплаты. Читайте подробнее о сервисе
+<a target="_blank" href="https://portal.1c.ru/applications/1C-Online-Orders">1С:Онлайн-заказы</a>.</p>
+
+<h2>Автозаполнение онлайн-заказов</h2>
+<p>Работать с онлайн-заказами становится быстрее и удобнее для разных типов клиентов и продавцов. Автоматизировали заполнение данных организации при создании новой настройки подключения.
+Предварительный вид онлайн-заказа доступен по кнопке "Внешний вид: Настроить". Если в карточке организации присутствует логотип, то он автоматически подгружается на страницу заказа. 
+Адрес заполняется фактическим значением, если не указан —юридическим. Также заполняются телефоны и электронная почта. 
+При оформлении онлайн-заказа покупатель "Индивидуальный предприниматель" может выбрать 
+оплату счета как физическое или как юридическое лицо. 
+Новые возможности позволят экономить время на ручном заполнении и снизят количество уточняющих вопросов с клиентом.
+</p>
+
+<h2>Загрузка отчетов о продажах с маркетплейса Wildberries</h2>
+<p>Ускорили получение отчетов о продажах с Wildberries. Теперь загружать отчеты можно из журнала "Комиссионные продажи" и списка документов "Отчет комиссионера". В меню "Загрузить из маркетплейса" появилась команда "Отчет о продажах WB (из файла)". Чтобы загрузить сразу несколько отчетов, достаточно перетянуть их в окно загрузки и нажать "Создать документы". В результате будут созданы и заполнены документы "Отчет комиссионера".</p>
+
+<h2>1С:Share</h2>
+<p>Добавили возможность делиться с сервисом 1С:Share документами "Расходная накладная" 
+и "Сверка взаиморасчетов". Получайте и отправляйте 
+ссылки на документы контрагентам любым удобным способом, сокращайте время на 
+документооборот. Например, если отправите ссылку "Расходную накладную", то у клиента этот документ загрузится как заполненная "Приходная накладная". 
+При получении от поставщика ссылки на "Счет на оплату", документ можно загрузить как "Заказ поставщику" или как полученный счет. </p>
+Читайте подробнее, как работать с 
+<a target="_blank" href="https://portal.1c.ru/applications/1C-Share">1C:Share</a>.
+
+<h2>Оптимизация обмена с интернет-магазинами</h2>
+<p>Повысили надежность обмена с интернет-магазинами, имеющими большое количество заказов. 
+Появилась настройка интеграции, позволяющая продолжать обмен заказами, даже если по 
+некоторым возникли проблемы. 
+Все выявленные заказы выделяются в общем списке, а в карточке каждого доступна подробная информация об ошибке. 
+Все заказы с ошибками доступны в разделе "Обслуживание" интеграции с интернет-магазином. 
+</p>
+
+<h2>
+Закрытие месяца</h2>
+
+
+<p>
+"Закрытие месяца" стало работать существенно быстрее и точнее. Улучшили расчет прямых затрат и фактической себестоимости.
+</p>
+
+<h1>Комиссионные продажи </h1>
+
+<h2>Учет компенсаций и декомпенсаций при продаже на торговых площадках</h2>
+
+<p>Сделали учет с маркетплейсами более точным и полным. Теперь можно учесть 
+сумму, которую торговая площадка платит продавцу за утерянный или испорченный 
+товар. Если потерянный товар возвращается на склад, есть возможность отразить 
+сумму декомпенсации, то есть обратный процесс. Величина компенсации и 
+декомпенсации указывается в документе "Отчет комиссионера о списании" по каждой 
+позиции. Для учета декомпенсации необходимо выбрать вид операции "Оприходование". 
+Все операции вместе с суммами можно увидеть на вкладке "Отчет о списании\оприходовании" 
+рабочего места "Комиссионные продажи".</p>
+
+<h2>Реализация услуг в "Отчете комиссионера"</h2>
+<p>Появилась возможность оформить продажу агентских услуг через комиссионера. В документе "Отчет комиссионера" на вкладке "Реализация" добавлена табличная часть "Услуги покупателей". На вкладке отобразятся покупатели, 
+для которых можно указать приобретенные услуги. </p>
+
+<h2>Автоматическое создание счетов-фактур при записи "Отчета комиссионера"</h2>
+
+<p>Упростили создание счетов-фактур для комиссионной торговли. Счет-фактура 
+создается автоматически при записи документа "Отчет комиссионера" в статусе "Выставлен (передан контрагенту)" 
+на дату создания отчета.
+</p>
+
+<h2>Передача на комиссию по нулевой цене</h2>
+<p>
+Появилась возможность отразить передачу на комиссию по нулевой цене, например 
+при передаче образцов. Для этого добавили возможность оставлять пустым поле "Цена" при передаче на комиссию в документе "Расходная накладная". Также можно не указывать цену и при возврате от комиссионера в документе "Приходная накладная". 
+Аналогично можно оставлять незаполненной цену передачи при выкупе 
+комиссионером в документе "Расходная накладная", возврате выкупленного товара 
+документом "Приходная накладная", а также в "Отчете комиссионера" на вкладках 
+"Реализация" и "Возвраты".</p>
+
+<h2>Уточняющая строка в отчете комиссионера</h2>
+<p>Документ "Отчет комиссионера" стал более информативным. На вкладке "Реализация" для счетов-фактур, выставленных для покупателя, отображается поясняющая строка 
+с информацией о комиссионере, номере счета-фактуры и дате документа.</p>
+
+<h1>Розничные продажи</h1>
+
+<h2>Предоплата баллами и подарочным сертификатом при продаже по "Заказу 
+покупателя"</h2>
+
+<p>Сделали удобнее и быстрее учет предоплаты бонусными баллами и подарочными сертификатами. 
+Продавец видит принятые суммы на вкладке "Оплата" и быстро понимает, какую сумму 
+принять к доплате у покупателя. </p>
+
+<h2>Простой старт розничных продаж</h2>
+
+<p>Розничному бизнесу стартовать в программе становится проще и быстрее. Данные об организации заполняются автоматически 
+на основании введенной информации о контрольно-кассовой технике (ККТ). Для 
+быстрого заполнения с помощником начала работы можно перейти по ссылке "У меня есть зарегистрированная ККТ" и 
+заполнить параметры. 
+После сохранения карточки оборудования заполнятся ИНН, наименование, форма собственности, система налогообложения, адрес торгового объекта. 
+В подключаемом оборудовании для кассы ККМ снимется условие "без подключения" и добавится ссылка на ККТ. Новая возможность поможет быстро заполнить основные реквизиты и приступить к работе, сэкономив время на ручных настройках.
+</p>
+	
+<h2>Средний чек в отчете "Розничная выручка по продавцам"</h2>
+<p>Расчет величины среднего чека в отчете "Розничные продажи" стал 
+более понятным и точным. 
+Если ранее информация могла искажаться из-за количества строк в чеке с разными ответственными, то сейчас в отчете по продавцам количество чеков и средний чек 
+считаются точно по каждому сотруднику. 
+В варианте отчета "Розничная выручка по складам и магазинам" количество чеков считается строго по складам, что позволит рассчитать 
+величину среднего чека по каждой торговой точке. 
+Аналитика розничных продаж становится более точной и прозрачной, что повышает качество управленческих решений. 
+</p>
+
+<h2>Фоновая архивация чеков ККМ </h2>
+<p>Теперь можно более гибко и прозрачно работать с архивными чеками. Архивацию 
+можно назначить на удобное время и выполнять по заданному расписанию, а не сразу 
+при закрытии смены. Система автоматически отбирает все "Отчёты о розничных 
+продажах" со статусом смены "Закрыта", начиная с указанной даты.
+Дополнительно теперь все ошибки архивации чеков детально отображаются в журнале регистрации, что позволяет оперативно их исправлять и предотвращать повторное возникновение. Это ускоряет весь процесс архивации, так как проблемы выявляются заранее, а не в конце процесса.
+</p>
+
+<h2>Дисконтная карта по умолчанию</h2>
+<p>Повышаем лояльность клиентов и ускоряем обслуживание. Теперь при выборе клиента в документе продажи программа сама подставит дисконтную карту. 
+Не нужно тратить время на поиск и ручной ввод, скидка по именной карте применится по умолчанию. 
+</p>
+<h2>Печать из журнала чеков ККМ</h2>	
+<p>В журнал документов "Чеки ККМ" добавили возможность отправлять и печатать документы. Для этого предусмотрены стандартные кнопки в рабочей панели и контекстном меню. 
+Для чеков продажи можно напечатать "Товарный чек" и "Гарантийный талон". Для чеков на возврат "Настраиваемый комплект документов", КМЗ (Акт о возвращении денежных сумм покупателям) и "Товарный чек". 
+Можно отправлять документы по электронной почте, приглашать клиентов к обсуждению и видеозвонкам. Быстрая печать и отправка документов без переключения между разделами повышает удобство и скорость обслуживания.
+</p>
+
+<h2>Увеличение длины номера "Чека коррекции"</h2>
+
+<p>Исключили риск нехватки свободных номеров для "Чеков коррекции". 
+Раньше номер "Чека коррекции" мог содержать только 4 символа без учета префиксов. 
+Этого было достаточно в обычных ситуациях, но при массовых корректировках, например по требованию ФНС, свободные номера могли закончиться и новые чеки было невозможно ввести. В новой версии увеличили длину номера до 6 символов. Нумерация теперь обновляется в начале каждого года.
+</p>
+
+<h2>Объединение строк с маркированными товарами при печати чеков</h2>
+<p>Теперь при печати бумажных чеков можно объединять маркированные товары с одинаковым наименованием и ценой в одну строку, если ККТ поддерживает такую возможность. 
+Вместо нескольких позиций в чеке появится одна строка с общим количеством и суммой. Для этого в разделе "Настройка печати" карточки "Кассы ККМ" нужно установить флажок "Сворачивать маркированные товары при печати чека". 
+Новая возможность позволит сократить длину чека с экономией кассовой ленты, 
+уменьшит время печати и сделает чек более понятным для покупателя.</p>
+	
+<h2>Вывод информации об остатке по серии на этикетки и ценники</h2>	
+<p>Стало удобнее работать с остатками товаров. Теперь при печати этикеток и 
+ценников можно показать актуальный остаток товара с детализацией до серий. Для 
+этого в макете шаблона предусмотрели поле "Остаток на складе". Новый 
+показатель удобно использовать в магазинах с широким серийным ассортиментом, например при продаже меховых изделий. Покупатель видит остаток по серии прямо на этикетке — быстрее выбирает и реже обращается с вопросами.</p>
+
+<h1>Рабочее место кассира (РМК)</h1>
+	
+<h2>РМК в режиме КСО (кассы самообслуживания)</h2>
+<p>Добавили возможность работать в РМК на кассах самообслуживания. 
+Теперь покупатель может самостоятельно оформить и оплатить покупку на терминале без участия продавца. Перейти к управлению кассы самообслуживания можно из раздела "Продажи" — "Сервис". 
+Для сотрудника устанавливаем новый специальный профиль прав "Касса самообслуживания" и режим КСО запустится сразу при авторизации в приложении. 
+Переключить режим работы РМК можно в разделе "Интерфейс" настроек. В качестве сценария использования выбираем "Терминал самообслуживания". 
+В режиме КСО вызов сотрудника может сопровождаться звуковым сигналом, записанным 
+в файле настройки. Такой сигнал возникает, когда покупателю необходимо вмешательство 
+сотрудника магазина. Возможность работать на кассах самообслуживания поможет 
+привлечь клиентов, привыкших делать покупки самостоятельно без продавцов, и 
+снизить операционные расходы.
+</p>
+
+<h2>Мобильный клиент</h2>
+<p>Продавать на рабочем месте кассира можно теперь в мобильном клиенте на смартфонах и планшетах. 
+Упростили работу и сделали интерфейс понятным. Рекомендуемые настройки для интерфейса 8.5: разрешение 1920×1080, DPI 200, 
+горизонтальная ориентация. </p>
+
+<h2>Монитор состояния РМК</h2>
+<p>Процесс работы в РМК становится еще удобнее и надежнее, а скорость 
+обслуживания покупателей повышается. 
+При запуске добавили возможность проверить корректность настройки оборудования, актуальность основных настроек и связь с внешними сервисами еще до начала обслуживания покупателей. 
+Для этого в настройки РМК добавлен раздел "Монитор состояния" с одноименной опцией. При старте РМК откроется единая страница с 
+подключенным оборудованием, активными опциями и внешними сервисами. 
+Например, "Эквайринговый терминал", "Сервер лояльности", "Маркировка". 
+Внизу страницы видна процентная шкала выполнения проверки. Успешно проверенное 
+оборудование будет отмечено зеленой галочкой. Если проверка не пройдена - на карточке отобразится желтый восклицательный 	знак. В случае ошибки достаточно нажать на карточку, чтобы увидеть полный список неполадок. 
+Отсюда можно сразу перейти к нужному оборудованию, справочнику или настройке и внести исправления. После устранения ошибок монитор можно закрыть и продолжить работу.
+При включенной опции "Скрывать монитор при актуальном состоянии" монитор скроется автоматически после успешной проверки. В любой момент во время смены к монитору можно 	вернуться через меню "Ещё". 
+Новый инструмент дает возможность заранее проверить готовность РМК к работе и оперативно устранить выявленные неполадки, не прерывая основной рабочий процесс. В результате повышается скорость обслуживания, лояльность персонала и покупателей.
+</p>
+
+
+<h2>Подтверждение скидок социальным категориям покупателей через MAX</h2>
+<p> В программу добавлена возможность подтвердить право на скидку из мессенджера 
+МАХ. Настраивайте скидки для покупателей определенной социальной категории в 
+системе управления лояльностью и предоставляйте при продаже на рабочем месте кассира.
+При считывании QR-кода в мессенджере покупателя программа РМК подтверждает наличие права на скидку.
+</p>
+
+
+<h2>Оплаты на рабочем месте кассира</h2>
+<p><b>Платежный сервис "Яндекс Пэй". </b>Появилась новая возможность - принимать оплату с помощью сервиса 
+платежей "Яндекс Пэй". 
+Покупатели во время оплаты в мобильном приложении "Яндекс Пэй" могут использовать как полную оплату, так и 
+разделенную на несколько частей (Яндекс Сплит).
+Доступна только полная оплата всей суммы чека. Возврат же можно сделать как полный, так и частичный, но только на основании чека продажи.<br>
+Оплата возможна как по динамической ссылке, связанной с чеком, так и с использованием QR-кода кассы аналогично оплате 
+через СБП.
+</p>
+
+<p><b>Подарочные сертификаты.</b> Оплаты с помощью подарочного сертификата 
+стали более гибкими. Добавили возможность сделать предоплату покупки подарочным сертификатом.
+Например при заказе мебели в магазине, можно внести предоплату подарочным сертификатами.
+<br>
+Теперь остаток подарочного сертификата можно сохранить, он "не сгорает" автоматически. Кассир по запросу покупателя может при оплате сохранить остаток на 
+балансе, списать или вернуть деньгами. При выборе возврата автоматически формируется чек возврата без основания — пользователю останется выбрать способ выплаты.</p>
+
+<p><b>Признак оплаты электронным сертификатом в чеке.</b> 
+При покупке с помощью социального сертификата ТРУ (товары, работы, услуги) и частичной оплате строка в чеке разбивается на две: одна из строк по сумме равна сумме сертификата (или сумме нескольких предъявленных сертификатов), а вторая — соответствует доплате, например, наличными.
+Суммы скидок при этом пересчитываются и указываются в обеих строках. В печатной форме чека в строке с оплатой сертификатом заполняется дополнительный реквизит - код ТРУ. 
+</p>
+
+<p><b>Кнопка единственного вида оплаты.</b> Ускорили прием оплаты, если 
+принимаем единственным способом. Теперь не теряете 
+время на выбор вида оплаты, если указали в настройках только один вид оплаты. 
+Например, выбрали только наличные, тогда у вас появляется кнопка для оплаты наличными. 
+В зависимости от настройки "Показывать QR-код оплаты наличными" на кнопку будет выводиться либо QR-код, либо пиктограмма вида оплаты.
+В режиме кассира можно настроить один из трех видов оплаты — наличные, картой или СБП, а в режиме КСО 
+— один из двух: картой или СБП.
+</p>
+
+<h2>Оборудование и настройки РМК</h2>
+<p><b>Несколько касс на одну организацию. </b>Добавили возможность настроить несколько кассовых аппаратов 
+на одном рабочем месте от одной организации. Для режима работы с несколькими кассами предусмотрена настройка РМК "Оформлять чеки на нескольких ККМ", настройка "ККМ по умолчанию" и распределение продаж номенклатуры. 
+Программа анализирует настройки программы и выводит диагностические сообщения, если настройки РМК не соответствуют количеству используемых на текущем рабочем месте кассовых аппаратов. 
+Если распределение продаж номенклатуры не настроено, для пробития чеков будет использоваться кассовый аппарат по умолчанию. </p>
+
+<p><b>Работа с автономной кассой</b>. Ускорили работу с автономным кассовым аппаратом, 
+теперь можно отключить подтверждение операций автономной ККТ. Теперь не нужно 
+подтверждать успешность операции при каждой операции, например при внесении и 
+выемке денежных средств. Отключить подтверждение можно в разделе "Формирование чека".</p>
+
+<p><b>Эквайринговый терминал по умолчанию для сотрудника.</b>
+Ускорили прием оплаты, теперь при наличии нескольких эквайринговых терминалов можно установить один по умолчанию для каждого сотрудника. 
+При оформлении продажи этот терминал будет автоматически подставляться в документы "Чек ККМ" и "Операция по платежным картам", в любой момент можно выбрать другой терминал из списка. 
+</p>
+
+<p><b>Выбор склада продажи</b>. Кассир теперь может выбрать склад списания товара при продаже, если при начале работы в РМК выбрали магазин с несколькими складами (группа складов).
+</p>
+
+<p><b>Ввод карты лояльности только сканированием</b>. 
+Доступна настройка единственного способа ввода дисконтной карты сканированием без возможности ручного ввода. 
+Если при считывании кода находится несколько карт, то кассир может выбрать одну из них или создать новую.
+На кассе самообслуживания есть возможность выбрать только одну из имеющихся карт, создать новую не разрешается. </p>
+
+<h2>Поддержка множественного указания марок частично выбывающей продукции</h2>
+<p>Появилась возможность для любого маркированного товара с частичным выбытием добавить в чек несколько строк с одной и той же маркой. Ранее возможность 
+работала только для пива в розлив, сейчас, например, можно внести в чек несколько флакончиков духов, налитых из одной бутыли.
+</p>
+
+<h2>Изображения товаров в корзине</h2>
+<p> Сокращаем возможность ошибок при продаже. Теперь при оформлении продажи в 
+корзине отображаются изображения товаров из карточек номенклатуры. Кассир видит 
+картинку сразу в строке при добавлении товара и может сверить её с физическим 
+товаром на кассе. Листая корзину, можно быстро просмотреть все позиции. 
+Изображение можно детализировать вплоть до характеристики, что позволяет быстрее 
+проверить товары покупателя и завершить продажу без ошибок. </p>
+
+<h1>Деньги и взаиморасчеты</h1>	
+
+<h2>Операции с депозитами</h2>
+<p>Появилась возможность отражать движение денег между депозитами и расчетными счетами компании. 
+Для этого добавили специальную операцию "Депозиты" в документы: "Платежное поручение", "Расход со счета", "Поступление на счет".
+При отражении операций только документами "Расход со счета" и "Поступление на счет" создавать депозитный счет необязательно, финансовые операции могут фиксироваться на специальном "техническом счете". 
+Такой счет позволит видеть состояние депозита без хранения реквизитов, также он 
+не показывается при заполнении полей и в подборе. 
+Если планируете отправлять платежные поручения в банк, потребуется создать специальный счет вида "Депозитный".
+Для депозитного счета можно загружать выписки из банка. Отражение операций между депозитным и расчетным счетом зависит от сценария работы со счетом.</p>
+
+<h2>Взаимозачет долгов и авансов</h2>
+<p>Упростили проведение взаимозачетов, добавив контроль заполнения операции в документ "Корректировка долга". Теперь 
+невозможно ошибиться и зачесть долг, используя аванс покупателя, и наоборот. Итоги документа отображаются с разделением на долги и авансы. 
+</p>
+
+
+<h2>Выплата
+зарплаты сотруднику документами "Расход
+со счета" и "Расход из кассы"</h2>
+<p>
+Стало удобнее вести расчеты с сотрудниками, которые получают зарплату на личные карты. Появилась возможность массово создавать документы выплаты для каждого сотрудника по платежной ведомости. 
+Достаточно выбрать способ выплаты (банк или касса), ведомость и отметить нужных сотрудников — программа сформирует документы автоматически.
+</p>
+
+
+<h1>Маркировка</h1>
+<h2>Вывод из оборота на основании "Перемещения запасов"</h2>
+<p>Упростили заполнение документов при выводе марки из оборота. 
+Теперь при оформлении "Перемещения запасов" для маркируемой продукции с видом операции "Списание на расходы" в панели "Маркировка" автоматически появляется гиперссылка "Создать вывод из оборота ИС МП", а также подсказка в разделе "Оформите". 
+Основные реквизиты заполняются автоматически — пользователю достаточно отсканировать коды маркировки для выбытия. Это позволит сократить время на повторное заполнение реквизитов и не забыть создать нужный документ.
+</p>
+
+<h1>Электронный документооборот</h1>
+
+<h2>Электронные перевозочные документы (ЭПД)</h2>
+<p>С 1 сентября 2026 года вступает в силу <a target="_blank" href="https://its.1c.ru/db/garant#content:412033598:hdoc"> Федеральный закон от 07.06.2025 № 140-ФЗ</a>, который делает обязательным применение электронных перевозочных документов (ЭПД).</p>
+<p>ЭПД – это цифровые аналоги бумажных сопроводительных транспортных документов, используются для фиксации отношений между грузоотправителями, перевозчиками и грузополучателями. 
+Оборот таких документов централизован и проходит через Государственную информационную систему электронных перевозочных документов (ГИС ЭПД), оператором которой является Минтранс России. 
+Основные перевозочные документы, которые необходимо оформлять в электронном виде: Электронная 
+транспортная накладная (ЭТрН), Электронный заказ или электронная заявка (ЭЗЗ) и 
+Электронный путевой лист (ЭПЛ). 
+</p>
+<p>Для соответствия законодательству обновили возможности работы с 1С-ЭПД. Для начала работы с электронными перевозочными документами необходимо:
+</p><ul><li>
+настроить электронный документооборот с 1С-ЭДО и подключить 1С-ЭПД;
+</li>
+<li>
+оформить электронные подписи или МЧД для сотрудников;
+</li>
+<li>
+договориться об обмене электронными документами с другими участниками перевозок и отправить приглашения к обмену через 1С-ЭДО;
+</li>
+<li>
+установить мобильное приложение на смартфоны сотрудников 
+для работы и подписания электронных перевозочных документов.  
+</li>
+</ul><p>В программе реализован быстрый ввод ЭТрН (электронной транспортной накладной) из документа "Расходная накладная" на 
+вкладке "ЭДО". ЭЗЗ (электронный заказ или заявку) можно ввести на 
+основании документов: "Счет на оплату", "Расходная накладная", "Заказ 
+покупателя".</p>
+
+<p>Подробнее об электронных перевозочных документах читайте <a target="_blank" href="https://its.1c.ru/db/metod81#content:8715:hdoc">
+в статье</a>.
+</p>
+
+<h2>Выгрузка ТН ВЭД и ОКПД2</h2>
+<p>Реализовали выгрузку в Национальный каталог кодов классификаторов ТН ВЭД и ОКПД2. Это гарантирует актуальность классификации товаров, исключает ошибки 
+ручного ввода и упрощает прохождение таможни и проверок — экономя время и снижая риски для бизнеса.</p>
+
+<h2>Блокировка "Счета-фактуры" без учета НДС</h2>
+<p>Сокращаем риски возникновения ошибок в учёте. Теперь, если учёт НДС 
+не ведётся, программа автоматически не загружает "Счет-фактуру" для входящего электронного УПД 
+со статусом "1". </p>
+
+
+<h1>Сделали проще и удобнее</h1>
+
+<p>Работать с документами и отчетами становится удобнее:</p>
+<ul><li>Команда "Изменить" в таблицах стала более заметной. Теперь кнопка отображается даже если строки не отмечены флажками.</li>
+<li>
+Для загрузки товаров из внешнего файла в документы "Приходная накладная", "Заказ поставщику", "Заказ покупателя" и "Расходная накладная" теперь достаточно колонок "Штрихкод" и "Количество". 
+Единица измерения для товара определится по штрихкоду.</li>
+<li>
+Во всех документах, где есть сворачиваемый "подвал", при закрытии сохраняется его состояние: свернут или развернут.
+Можно вернуться в документ и без лишних действий продолжить работу. В документе "Платежное поручение" "подвал" всегда развернут по умолчанию.
+</li>
+<li>
+В отчетах, где требуется сравнение показателей по месяцам, появились новые варианты. Например, в отчет "Розничная выручка" добавлен вариант "Сравнение ежемесячной розничной выручки", а в отчет "Продажи" добавлен вариант "Сравнение продаж менеджеров по месяцам". Стало удобнее проводить сравнительный анализ результатов.</li>
+<li>
+Сделали удобнее работу с табличными частями документов при множестве развернутых на экране окон , а также при расширении монитора менее рекомендованного (1920х1080). Для 
+документов в целом и табличных частей при сжатии окна будут отображаться отдельные полосы прокрутки. 
+Полоса прокрутки для табличной части позволит увидеть более одной строки.
+</li>
+<li>
+Для диаграмм отчетов добавили возможность настроить палитру.
+</li>
+<li>
+В помощнике ввода начальных остатков добавили итоговые строки по количеству и суммам на всех страницах раздела "Прочие". 
+Теперь при заполнении данных не нужно вручную подсчитывать контрольные суммы – итоги отображаются автоматически. 
+Это упрощает проверку введенных остатков, снижает риск ошибок и экономит время.
+</li>
+<li>
+Увеличили количество цифр в номере приходных накладных до 50 символов. Новая возможность оптимизирует работу со входящей документацией, а также обмен документами с 1С:Бухгалтерией. 
+
+</li>
+<li>
+Работать с контрагентами становится удобнее, даже если у них много телефонных номеров и электронных адресов. Все контакты доступны по кнопке "Показать в списке" в карточке лида или контрагента. 
+Можно вести поиск и устанавливать дополнительные фильтры.
+</li>
+<li>Печатную форму реквизитов организации можно гибко настраивать — указать несколько расчетных счетов, вывести на печать логотип, печать организации и факсимиле руководителя. 
+Печатайте реквизиты теперь сразу из справочника "Организации", копируйте быстро из печатной формы и отправляйте клиенту или поставщику по электронной почте или в мессенджере. 
+</li>
+<li>Ввод реквизитов иностранного контрагента стал понятнее — вместо информации об ИНН на вкладке "Главное" отображается его аналог "Налоговый/Рег. номер". Для заполнения этого номера доступна подсказка с количеством цифр в странах ЕАЭС. 
+</li>
+</ul><h1>Обмен с 1С:Бухгалтерией</h1>
+	
+<p>Приходные кассовые ордера на розничную выручку теперь выгружаются с учетом предоплаты. Суммы в кассовой книге 1С:Бухгалтерии соответствуют фактически полученным от покупателей. 
+<br>
+В документах "Отчет о розничных продажах" для оплат банковской картой теперь выгружается информация о договорах эквайринга. 
+Заполнение договоров стало более точным, так как договор передается из исходной операции, а не подбирается по условиям в базе-получателе. 
+</p>
+
+<h1>Сервис</h1>
+		
+<h2>Подключаемое оборудование</h2>
+<ul><li>Поддержка драйверов оборудования, разработанных в соответствии с "Требованиями к разработке драйверов подключаемого оборудования, версия 4.8:
+<ul><li>Расширены требования к устройствам распознавания. Добавлена функция получения изображения.
+</li>
+<li>Расширен механизм отображения HTML на дисплее покупателя. Добавлены функции кэширования медиафайлов для отображения. 
+</li>
+<li>Расширен получаемый состав данных с весов (границы пересечения зон взвешивания).
+</li>
+<li>Добавлен новый тип события RFIDData для получение данных RFID метки на терминале сбора данных.
+</li>
+<li>Расширен механизм работы эквайринговых систем:<br>
+	- Новый метод получения статуса операции;<br>
+	- Расширенные выходные параметры об операции.</li>
+</ul></li>
+<li>Добавлена поддержка работы с электронными сертификатами по протоколу ФЭС НСПК v3:
+<ul><li>Обновлена компонента интеграции с электронными сертификатами НСПК до версии 2.0.2.2.</li>
+	
+</ul></li>
+<li>
+Генерация изображений штрихкода<span lang="en-us">:</span><ul><li>Добавлена возможность генерации изображения в формате SVG<span lang="en-us">;</span></li>
+<li>Обновлена компонента генерации штрихкода до версии 10.0.12.9<span lang="en-us">.</span></li>
+</ul></li>
+<li>Доработан форматно-логический контроль:<ul><li>Осуществление контроля проверенных на ККТ КМ в составе чека перед фискализацией;
+</li>
+<li>Добавлена проверка данных поставщика для позиций чека в агентских и платежных сценариях;
+</li>
+<li>Исключены проверки соответствия данных поставщика и агента для заголовка чека и фискальных позиций.
+</li></ul></li>
+<li>Расширен механизм отображения информации на дисплее покупателя в режиме: 
+<ul><li>Добавлена адаптация интерфейса под малые разрешения экранов, включая 800×600, а также под горизонтальную и вертикальную ориентацию монитора;
+</li>
+<li>Добавлена возможность вывода рекламы на дисплей покупателя, используемый в качестве второго монитора;
+</li>
+<li>Улучшено качество масштабирования изображений и рекламных материалов при изменении разрешения экрана;
+</li>
+<li>Добавлена возможность использования шаблонов размещения областей на мониторе для разных разрешений и сценариев отображения;
+</li>
+<li>Расширены возможности настройки состава и расположения областей на дисплее покупателя;
+</li>
+<li>Добавлены функции предварительной передачи и кэширования медиафайлов по стандарту 4.8.
+</li>
+</ul></li><li>Изменен состав поставляемых драйверов:
+<ul><li>Добавлен новый драйвер "1С:Дисплей покупателя" версии 5.1.5.2. <br>
+Драйвер разработан в соответствии с документом "Требования к разработке 
+драйверов подключаемого оборудования" версия 4.8.
+</li>
+<li>Обновлен драйвер "1С:Устройство распознавания" версии 1.0.0.5.<br>Драйвер разработан в соответствии с документом "Требования к разработке драйверов подключаемого оборудования" версия 4.8.
+</li>
+<li> 
+Обновлен драйвер "1С:Принтер чеков" до версии 5.1.3.8. <br>
+Драйвер разработан в соответствии с документом "Требования к разработке драйверов подключаемого оборудования" версия 4.7. 
+</li>
+<li> 
+Обновлен драйвер "1С:Электронные весы (Native Api)" до версии 2.1.3.7.<br>
+Драйвер разработан в соответствии с документом "Требования к разработке 
+драйверов подключаемого оборудования" версия 4.7. </li>
+</ul><h2>Обновление библиотек</h2>
+<p>В версию включены следующие стандартные библиотеки:</p>
+<ul><li>Библиотека стандартных подсистем 3.2.1</li>
+<li>Библиотека технологии сервиса 2.1.1</li>
+<li>Библиотека синхронизации данных 1.1.1</li>
+<li>Библиотека подключаемого оборудования 3.3.4</li>
+<li>Библиотека электронных документов 1.10.1</li>
+<li>Библиотека регламентной отчетности 1.3.1</li>
+<li>Библиотека интернет-поддержки пользователей 2.9.2</li>
+<li>Библиотека интеграции ГосИС 3.0.7.3</li>
+<li>Библиотека рабочего места кассира 1.1.4</li>
+<li>Библиотека зарплаты и кадров 3.1.38</li>
+<li>Библиотека распознавания документов 1.6.1.</li>
+<li>Библиотека1СПлюс 1.0.8.3</li>
+</ul><hr></hr><h1>Смотрите также</h1>
+
+					<p>1. Релиз предназначен для обновления с конфигурации версий версий 3.0.13.172, 3.0.13.183, 3.0.13.188, 3.0.13.195, 3.0.13.201, 3.0.13.210, 3.0.13.232, 3.0.13.238, 3.0.13.251, 3.0.13.260, 3.0.13.278, 3.0.13.292, 3.0.13.300, 3.0.13.305, 3.0.13.314, 3.0.13.330, 3.0.13.342, 3.0.13.357, 3.0.13.363, 3.0.13.374, 3.0.14.93, 3.0.14.100, 3.0.14.108, 3.0.14.115, 3.0.14.123, 3.0.14.140.</p>
+					<p>2. Дополнительная информация приведена в файле ReadMe.txt.</p>
+		</li></ul></div>
+	
+</body></html>

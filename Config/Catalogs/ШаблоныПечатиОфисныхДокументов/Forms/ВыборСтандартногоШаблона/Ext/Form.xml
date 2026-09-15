@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoURL>false</AutoURL>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="110">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="111"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Назначение" id="116">
+			<DataPath>Назначение</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>После выбора значение будет установлено в итоговом шаблоне.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ClearButton>true</ClearButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="НазначениеКонтекстноеМеню" id="117"/>
+			<ExtendedTooltip name="НазначениеРасширеннаяПодсказка" id="118"/>
+			<Events>
+				<Event name="OnChange">НазначениеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаШаблоныСПросмотром" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблоны</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AutoScreenTypeSensitive</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШаблоныСПросмотромРасширеннаяПодсказка" id="100"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСписок" id="119">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<Table name="СписокСтандартныхШаблонов" id="46">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<SelectionMode>SingleRow</SelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialRowActivation>Activate</InitialRowActivation>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>СтандартныеШаблоны</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ShowCommandBar>false</ShowCommandBar>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокСтандартныхШаблоновКонтекстноеМеню" id="47"/>
+							<AutoCommandBar name="СписокСтандартныхШаблоновКоманднаяПанель" id="48">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокСтандартныхШаблоновРасширеннаяПодсказка" id="49"/>
+							<SearchStringAddition name="СписокСтандартныхШаблоновСтрокаПоиска" id="50">
+								<AdditionSource>
+									<Item>СписокСтандартныхШаблонов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтандартныхШаблоновСтрокаПоискаКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="СписокСтандартныхШаблоновСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСтандартныхШаблоновСостояниеПросмотра" id="53">
+								<AdditionSource>
+									<Item>СписокСтандартныхШаблонов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтандартныхШаблоновСостояниеПросмотраКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="СписокСтандартныхШаблоновСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокСтандартныхШаблоновУправлениеПоиском" id="56">
+								<AdditionSource>
+									<Item>СписокСтандартныхШаблонов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтандартныхШаблоновУправлениеПоискомКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="СписокСтандартныхШаблоновУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокСтандартныхШаблоновВыбор</Event>
+								<Event name="OnActivateRow">СписокСтандартныхШаблоновПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СписокСтандартныхШаблоновНаименование" id="67">
+									<DataPath>СтандартныеШаблоны.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СписокСтандартныхШаблоновНаименованиеКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="СписокСтандартныхШаблоновНаименованиеРасширеннаяПодсказка" id="69"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаБольшеВозможностей" id="38">
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБольшеВозможностейРасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<LabelDecoration name="ТекстБольшеВозможностей" id="40">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не нашли нужный шаблон?</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТекстБольшеВозможностейКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ТекстБольшеВозможностейРасширеннаяПодсказка" id="42"/>
+								</LabelDecoration>
+								<LabelDecoration name="ПредложитьШаблон" id="43">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предложите свой</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ПредложитьШаблонКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ПредложитьШаблонРасширеннаяПодсказка" id="45"/>
+									<Events>
+										<Event name="Click">ПредложитьШаблонНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПросмотр" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предварительный просмотр (образец)</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПросмотрРасширеннаяПодсказка" id="115"/>
+					<ChildItems>
+						<CommandBar name="КомандыПросмотраPDF" id="112">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды просмотра</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSource>Item.ПолеPDF</CommandSource>
+							<ExtendedTooltip name="КомандыПросмотраPDFРасширеннаяПодсказка" id="113"/>
+						</CommandBar>
+						<UsualGroup name="ГруппаЗагрузкаПросмотра" id="124">
+							<Visible>false</Visible>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗагрузкаПросмотраРасширеннаяПодсказка" id="125"/>
+							<ChildItems>
+								<PictureDecoration name="КартикаЗагрузкаПросмотра" id="129">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изображение загрузки просмотра</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="КартикаЗагрузкаПросмотраКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="КартикаЗагрузкаПросмотраРасширеннаяПодсказка" id="131"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДекорацияЗагрузкаПросмотра" id="126">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изображение предварительного просмотра загружается.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗагрузкаПросмотраКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ДекорацияЗагрузкаПросмотраРасширеннаяПодсказка" id="128"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<PDFDocumentField name="ПолеPDF" id="104">
+							<DataPath>ПолеPDF</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<CommandSet>
+								<ExcludedCommand>ConvertToGrayScale</ExcludedCommand>
+								<ExcludedCommand>RotateClockwise</ExcludedCommand>
+								<ExcludedCommand>RotateCounterclockwise</ExcludedCommand>
+								<ExcludedCommand>SignatureProperties</ExcludedCommand>
+								<ExcludedCommand>VerifySignatures</ExcludedCommand>
+							</CommandSet>
+							<Width>75</Width>
+							<ContextMenu name="ПолеPDFКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="ПолеPDFРасширеннаяПодсказка" id="106"/>
+							<ViewStatusAddition name="ПолеPDFСостояниеПросмотра" id="107">
+								<AdditionSource>
+									<Item>ПолеPDF</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолеPDFСостояниеПросмотраКонтекстноеМеню" id="108"/>
+								<ExtendedTooltip name="ПолеPDFСостояниеПросмотраРасширеннаяПодсказка" id="109"/>
+							</ViewStatusAddition>
+						</PDFDocumentField>
+						<RadioButtonField name="ФорматФайла" id="121">
+							<DataPath>ФорматФайла</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<EqualColumnsWidth>true</EqualColumnsWidth>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Microsoft Word (.docx)'</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">docx</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Текстовый документ ODF (.odt)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">odt</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ФорматФайлаКонтекстноеМеню" id="122"/>
+							<ExtendedTooltip name="ФорматФайлаРасширеннаяПодсказка" id="123"/>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СтандартныеШаблоны" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стандартные шаблоны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Назначение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.НазначенияШаблоновПечатиОфисныхДокументов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Макет" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Объект" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изображение" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изображение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПолеPDF" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предварительный просмотр (образец)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:pdfdoc="http://v8.1c.ru/8.3/data/pdf">pdfdoc:PDFDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Назначение" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.НазначенияШаблоновПечатиОфисныхДокументов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФорматФайла" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формат файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоВебКлиент" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это веб клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасширениеРаботыСФайламиПодключено" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение работы с файлами подключено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Выбрать</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Назначение">
+			<Type>
+				<v8:Type>cfg:EnumRef.НазначенияШаблоновПечатиОфисныхДокументов</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="СкрытьВыборназначения">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>
