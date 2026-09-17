@@ -1668,7 +1668,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Счет расходов, на который будет отнесена стоимость списанных на запасов</v8:content>
+							<v8:content>Счет расходов или затрат (включая НЗП), на который будет отнесена стоимость списанных запасов</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -1693,6 +1693,7 @@
 							<app:value xsi:type="v8:FixedArray">
 								<v8:Value xsi:type="xr:DesignTimeRef">Enum.ТипыСчетов.EnumValue.Расходы</v8:Value>
 								<v8:Value xsi:type="xr:DesignTimeRef">Enum.ТипыСчетов.EnumValue.КосвенныеЗатраты</v8:Value>
+								<v8:Value xsi:type="xr:DesignTimeRef">Enum.ТипыСчетов.EnumValue.НезавершенноеПроизводство</v8:Value>
 							</app:value>
 						</app:item>
 					</ChoiceParameters>
