@@ -3,25 +3,25 @@
 	<Document uuid="1177d586-9144-4ccb-b3c5-1e5e904839b5">
 		<InternalInfo>
 			<xr:GeneratedType name="DocumentObject.РаспределениеЗатрат" category="Object">
-							<xr:TypeId>1a2e8426-165f-49b5-93a5-eae3a32fe21a</xr:TypeId>
-							<xr:ValueId>aaafffa9-f312-46c1-b485-f63d240011b5</xr:ValueId>
-						</xr:GeneratedType>
+				<xr:TypeId>1a2e8426-165f-49b5-93a5-eae3a32fe21a</xr:TypeId>
+				<xr:ValueId>aaafffa9-f312-46c1-b485-f63d240011b5</xr:ValueId>
+			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentRef.РаспределениеЗатрат" category="Ref">
-							<xr:TypeId>69c2ce82-c8cf-45f3-8c32-0a06e5dd590c</xr:TypeId>
-							<xr:ValueId>bb30d33e-8d4b-4f01-8540-79f334b3c005</xr:ValueId>
-						</xr:GeneratedType>
+				<xr:TypeId>69c2ce82-c8cf-45f3-8c32-0a06e5dd590c</xr:TypeId>
+				<xr:ValueId>bb30d33e-8d4b-4f01-8540-79f334b3c005</xr:ValueId>
+			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentSelection.РаспределениеЗатрат" category="Selection">
-							<xr:TypeId>8228ff06-fad3-49ae-b557-08ba47778802</xr:TypeId>
-							<xr:ValueId>49e2a94e-3b47-46c0-9542-0b3c8396bcc6</xr:ValueId>
-						</xr:GeneratedType>
+				<xr:TypeId>8228ff06-fad3-49ae-b557-08ba47778802</xr:TypeId>
+				<xr:ValueId>49e2a94e-3b47-46c0-9542-0b3c8396bcc6</xr:ValueId>
+			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentList.РаспределениеЗатрат" category="List">
-							<xr:TypeId>b3581717-7a66-451e-9d1f-63f890c02e04</xr:TypeId>
-							<xr:ValueId>0753607e-5bad-43b8-80d9-20305de04f7b</xr:ValueId>
-						</xr:GeneratedType>
+				<xr:TypeId>b3581717-7a66-451e-9d1f-63f890c02e04</xr:TypeId>
+				<xr:ValueId>0753607e-5bad-43b8-80d9-20305de04f7b</xr:ValueId>
+			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentManager.РаспределениеЗатрат" category="Manager">
-							<xr:TypeId>3bf6f9b4-6dd5-465b-8fd1-d98f4d1a77e5</xr:TypeId>
-							<xr:ValueId>d6934660-6714-410e-8fb7-28019f2731e2</xr:ValueId>
-						</xr:GeneratedType>
+				<xr:TypeId>3bf6f9b4-6dd5-465b-8fd1-d98f4d1a77e5</xr:TypeId>
+				<xr:ValueId>d6934660-6714-410e-8fb7-28019f2731e2</xr:ValueId>
+			</xr:GeneratedType>
 			<xr:PropertyState>
 				<xr:Property>ObjectModule</xr:Property>
 				<xr:State>Extended</xr:State>
