@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="1177d586-9144-4ccb-b3c5-1e5e904839b5">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РаспределениеЗатрат" category="Object">
+				<xr:TypeId>1a2e8426-165f-49b5-93a5-eae3a32fe21a</xr:TypeId>
+				<xr:ValueId>aaafffa9-f312-46c1-b485-f63d240011b5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РаспределениеЗатрат" category="Ref">
+				<xr:TypeId>69c2ce82-c8cf-45f3-8c32-0a06e5dd590c</xr:TypeId>
+				<xr:ValueId>bb30d33e-8d4b-4f01-8540-79f334b3c005</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РаспределениеЗатрат" category="Selection">
+				<xr:TypeId>8228ff06-fad3-49ae-b557-08ba47778802</xr:TypeId>
+				<xr:ValueId>49e2a94e-3b47-46c0-9542-0b3c8396bcc6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РаспределениеЗатрат" category="List">
+				<xr:TypeId>b3581717-7a66-451e-9d1f-63f890c02e04</xr:TypeId>
+				<xr:ValueId>0753607e-5bad-43b8-80d9-20305de04f7b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РаспределениеЗатрат" category="Manager">
+				<xr:TypeId>3bf6f9b4-6dd5-465b-8fd1-d98f4d1a77e5</xr:TypeId>
+				<xr:ValueId>d6934660-6714-410e-8fb7-28019f2731e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РаспределениеЗатрат</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>9fa63c6a-85cc-4c14-bd9a-eb8a0a971893</ExtendedConfigurationObject>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПартииТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПрослеживаемыеТовары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЗапасыВРазрезеГТД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НДСЗаписиКнигиПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РезервыТоваровОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОперацииСПрослеживаемымиТоварами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЗапасыНаСкладах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПартииТоваровУСН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПотребностьВЗапасах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СерииНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.Управленческий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Запасы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДоходыИРасходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЗапасыИАгентскиеУслугиПринятые</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПартииТоваровДляКУДиР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОписаниеОперацииКУДиР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СерииНоменклатурыГарантии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЗапасыПринятыеВРазрезеГТД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДвиженияСерииНоменклатуры</xr:Item>
+			</RegisterRecords>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="04caa8b3-6e5e-4359-94cb-68bf9f77c6d0">
+				<InternalInfo>
+			<xr:GeneratedType name="DocumentTabularSection.РаспределениеЗатрат.Затраты" category="TabularSection">
+									<xr:TypeId>60376d65-5c98-4f2b-ab80-17c68b8342d4</xr:TypeId>
+									<xr:ValueId>dde7e9f6-312b-402d-b278-cc2afe5eabf1</xr:ValueId>
+								</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentTabularSectionRow.РаспределениеЗатрат.Затраты" category="TabularSectionRow">
+									<xr:TypeId>f71b440a-bb12-487b-8407-d24d4272d48e</xr:TypeId>
+									<xr:ValueId>829da8c0-82df-4331-82bb-7830389ffd3c</xr:ValueId>
+								</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Затраты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>19b0442f-4b90-473d-80dd-78de9f8f4e06</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+<Attribute uuid="25726a6a-16cd-4598-a1c1-0619665d1005">
+				<Properties>
+					<Name>рзп_Проект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект (транспортное средство), к которому относится затрата. Пустой проект распределяется на весь выпуск.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="6d7755a9-dd82-4e4b-9b73-c6d55985b94f">
+				<InternalInfo>
+			<xr:GeneratedType name="DocumentTabularSection.РаспределениеЗатрат.РаспределениеЗатрат" category="TabularSection">
+									<xr:TypeId>fde48dcb-004e-4e44-838e-e8d2130c6b85</xr:TypeId>
+									<xr:ValueId>4479a6be-ed8f-43bb-857c-2126088691eb</xr:ValueId>
+								</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentTabularSectionRow.РаспределениеЗатрат.РаспределениеЗатрат" category="TabularSectionRow">
+									<xr:TypeId>8a0e8814-fdbf-45a7-942d-226a76a91255</xr:TypeId>
+									<xr:ValueId>4a04b644-7700-4c7e-b5dc-c0bbebb84651</xr:ValueId>
+								</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РаспределениеЗатрат</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f901694d-30c1-4a7e-a71f-750cb3b7dc2d</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+<Attribute uuid="a3b572af-7f4c-4a4b-a76b-4c446a1264b7">
+				<Properties>
+					<Name>рзп_Проект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект выпуска, на который отнесена сумма затраты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="c5608b49-a8f8-4e13-9338-c5bd3c0c190d">
+				<InternalInfo>
+			<xr:GeneratedType name="DocumentTabularSection.РаспределениеЗатрат.Продукция" category="TabularSection">
+									<xr:TypeId>735bf0b5-2322-4065-a94e-b9098b384548</xr:TypeId>
+									<xr:ValueId>2953e3b6-7acc-4de1-8696-9c7e7524133c</xr:ValueId>
+								</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentTabularSectionRow.РаспределениеЗатрат.Продукция" category="TabularSectionRow">
+									<xr:TypeId>29cd7173-d596-4ff6-a6bb-50f4b2cdab04</xr:TypeId>
+									<xr:ValueId>1adb64c6-b916-41d2-8074-023132b25449</xr:ValueId>
+								</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Продукция</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2e969d71-129f-4606-9f8a-da9c9a7a341b</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+<Attribute uuid="23988398-5295-4251-8eec-d51cf3e52fd5">
+				<Properties>
+					<Name>рзп_Проект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект выпуска из акта выполненных работ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>
