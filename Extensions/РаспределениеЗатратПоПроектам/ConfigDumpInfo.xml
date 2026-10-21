@@ -14,8 +14,8 @@
 		</Metadata>
 		<Metadata name="Document.РаспределениеЗатрат.Form.ФормаДокумента" id="4cc9e148-e093-42bb-90dd-e94b657eb4df" configVersion="421e2ba5654f6bfebdfda24fde343dc49c10195c"/>
 		<Metadata name="Document.РаспределениеЗатрат.Form.ФормаДокумента.Form" id="4cc9e148-e093-42bb-90dd-e94b657eb4df.0" configVersion="a5f2e763bb3a9214a35586aabcebb2f52f367133"/>
-		<Metadata name="Document.РаспределениеЗатрат.ManagerModule" id="1177d586-9144-4ccb-b3c5-1e5e904839b5.2" configVersion="6fe18f250969c567218a40b6b0c15684d12d6a5a"/>
-		<Metadata name="Document.РаспределениеЗатрат.ObjectModule" id="1177d586-9144-4ccb-b3c5-1e5e904839b5.0" configVersion="8818b360ad749fd5ff8d9d55fe9bb1370d52e8d0"/>
+		<Metadata name="Document.РаспределениеЗатрат.ManagerModule" id="1177d586-9144-4ccb-b3c5-1e5e904839b5.2" configVersion="040a235a22f2bd9d1d6476281ac6d16c1d48d516"/>
+		<Metadata name="Document.РаспределениеЗатрат.ObjectModule" id="1177d586-9144-4ccb-b3c5-1e5e904839b5.0" configVersion="05cce7f25eb07ae3f06430fb08dab006dd6afd1a"/>
 		<Metadata name="Language.Русский" id="ac4f06e0-8d86-4e08-a943-6d5502aaa938" configVersion="750a03b56f9a502b93adb7212424e5d13293ca12"/>
 		<Metadata name="Role.рзп_ОсновнаяРоль" id="22943009-9a86-44a4-8f52-083cf125b9cf" configVersion="ac28612e77b2512fc6a6145a42767dcf95a835d4"/>
 		<Metadata name="Role.рзп_ОсновнаяРоль.Rights" id="22943009-9a86-44a4-8f52-083cf125b9cf.0" configVersion="2747b087df28ca347974eb83066611f4cd81a8ac"/>
