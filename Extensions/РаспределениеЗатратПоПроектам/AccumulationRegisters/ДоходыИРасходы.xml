@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AccumulationRegister uuid="be55e537-9bab-4e65-a4b3-b3a93b1b21d5">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.ДоходыИРасходы" category="Record">
+							<xr:TypeId>acc4a5d6-2614-446a-a71c-421421b0bba5</xr:TypeId>
+							<xr:ValueId>2712ab11-fe5f-4e7d-91a6-74536f596b78</xr:ValueId>
+						</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.ДоходыИРасходы" category="Manager">
+							<xr:TypeId>2f825f6e-b9f4-42f2-8827-658a44131e4f</xr:TypeId>
+							<xr:ValueId>de541bf5-22fa-4eaa-a7cb-1e6c814dd4f9</xr:ValueId>
+						</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.ДоходыИРасходы" category="Selection">
+							<xr:TypeId>837c4a48-8e8c-4282-aec6-f0952e4a9ea8</xr:TypeId>
+							<xr:ValueId>c3034f1d-88d5-4f3f-afef-e972197aafdb</xr:ValueId>
+						</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.ДоходыИРасходы" category="List">
+							<xr:TypeId>165b860d-09f2-4d1f-8987-9a78967a9ee7</xr:TypeId>
+							<xr:ValueId>7a2c96bf-e650-4bd3-a90a-80445af39b8a</xr:ValueId>
+						</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.ДоходыИРасходы" category="RecordSet">
+							<xr:TypeId>43d48731-79fc-4f64-8aa8-4878cc34072a</xr:TypeId>
+							<xr:ValueId>a41e45cd-b591-4d04-9867-ad5c5688d783</xr:ValueId>
+						</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.ДоходыИРасходы" category="RecordKey">
+							<xr:TypeId>63633d78-0716-4b7f-9797-45fdee5afae4</xr:TypeId>
+							<xr:ValueId>805fcdca-9398-453f-b981-8c8982747ae7</xr:ValueId>
+						</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДоходыИРасходы</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>be55e537-9bab-4e65-a4b3-b3a93b1b21d5</ExtendedConfigurationObject>
+		</Properties>
+	</AccumulationRegister>
+</MetaDataObject>

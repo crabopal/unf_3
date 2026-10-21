@@ -719,15 +719,6 @@
 									<ContextMenu name="ПродукцияЗаказПокупателяКонтекстноеМеню" id="72"/>
 									<ExtendedTooltip name="ПродукцияЗаказПокупателяРасширеннаяПодсказка" id="207"/>
 								</InputField>
-								<InputField name="ПродукцияПроект" id="9101">
-									<DataPath>Объект.Продукция.Проект</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
-									<Width>20</Width>
-									<Wrap>false</Wrap>
-									<ContextMenu name="ПродукцияПроектКонтекстноеМеню" id="9102"/>
-									<ExtendedTooltip name="ПродукцияПроектРасширеннаяПодсказка" id="9103"/>
-								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -1956,12 +1947,6 @@
 														<CommandName>Form.Command.ЗатратыЗаполнитьПоОстаткам</CommandName>
 														<ExtendedTooltip name="ЗаполнитьПоОстаткамРасширеннаяПодсказка" id="240"/>
 													</Button>
-													<Button name="ЗатратыЗаполнитьПроекты" id="9104">
-														<Type>CommandBarButton</Type>
-														<SkipOnInput>true</SkipOnInput>
-														<CommandName>Form.Command.ЗатратыЗаполнитьПроекты</CommandName>
-														<ExtendedTooltip name="ЗатратыЗаполнитьПроектыРасширеннаяПодсказка" id="9105"/>
-													</Button>
 												</ChildItems>
 											</AutoCommandBar>
 											<ExtendedTooltip name="ЗатратыРасширеннаяПодсказка" id="242"/>
@@ -2028,14 +2013,6 @@
 													<Wrap>false</Wrap>
 													<ContextMenu name="ЗатратыЗаказПокупателяКонтекстноеМеню" id="24"/>
 													<ExtendedTooltip name="ЗатратыЗаказПокупателяРасширеннаяПодсказка" id="246"/>
-												</InputField>
-												<InputField name="ЗатратыПроект" id="9106">
-													<DataPath>Объект.Затраты.Проект</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
-													<Wrap>false</Wrap>
-													<ContextMenu name="ЗатратыПроектКонтекстноеМеню" id="9107"/>
-													<ExtendedTooltip name="ЗатратыПроектРасширеннаяПодсказка" id="9108"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -2141,14 +2118,6 @@
 													<Wrap>false</Wrap>
 													<ContextMenu name="ЗатратыКраткоСчетЗатратКонтекстноеМеню" id="856"/>
 													<ExtendedTooltip name="ЗатратыКраткоСчетЗатратРасширеннаяПодсказка" id="857"/>
-												</InputField>
-												<InputField name="ЗатратыКраткоПроект" id="9109">
-													<DataPath>Объект.Затраты.Проект</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
-													<Wrap>false</Wrap>
-													<ContextMenu name="ЗатратыКраткоПроектКонтекстноеМеню" id="9110"/>
-													<ExtendedTooltip name="ЗатратыКраткоПроектРасширеннаяПодсказка" id="9111"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -2341,16 +2310,6 @@
 													<Wrap>false</Wrap>
 													<ContextMenu name="РаспределениеЗатратЗаказПокупателяКонтекстноеМеню" id="50"/>
 													<ExtendedTooltip name="РаспределениеЗатратЗаказПокупателяРасширеннаяПодсказка" id="255"/>
-												</InputField>
-												<InputField name="РаспределениеЗатратПроект" id="9112">
-													<DataPath>Объект.РаспределениеЗатрат.Проект</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<EditMode>EnterOnInput</EditMode>
-													<AutoEditMode>true</AutoEditMode>
-													<Width>20</Width>
-													<Wrap>false</Wrap>
-													<ContextMenu name="РаспределениеЗатратПроектКонтекстноеМеню" id="9113"/>
-													<ExtendedTooltip name="РаспределениеЗатратПроектРасширеннаяПодсказка" id="9114"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -3601,23 +3560,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗатратыЗаполнитьПоОстаткам</Action>
-			<ModifiesSavedData>true</ModifiesSavedData>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="ЗатратыЗаполнитьПроекты" id="27">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить проекты</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Разложить затраты по проектам амортизации и перемещений запасов</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗатратыЗаполнитьПроекты</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
