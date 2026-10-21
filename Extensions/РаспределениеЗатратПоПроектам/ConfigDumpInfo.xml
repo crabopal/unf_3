@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.21">
+	<ConfigVersions>
+		<Metadata name="AccumulationRegister.ДоходыИРасходы" id="95086794-1b35-4ea0-b41c-a4d1763c5c75" configVersion="359ba29fa9ec7949988288c4ddb55a9800000000"/>
+		<Metadata name="Catalog.Проекты" id="ea5abb32-6e84-42fe-bd21-e0298db4c8e2" configVersion="c0c6ba66824bcd647b3ad80964ce41ee00000000"/>
+		<Metadata name="Configuration.РаспределениеЗатратПоПроектам" id="931e6e25-1f11-49c1-8834-c110d453c0c8" configVersion="384a4835bdade31190f1b83f05c1e93100000000"/>
+		<Metadata name="Document.РаспределениеЗатрат" id="1177d586-9144-4ccb-b3c5-1e5e904839b5" configVersion="a9f21af4966aa2047da3e736d7e2394a00000000">
+			<Metadata name="Document.РаспределениеЗатрат.TabularSection.Затраты" id="04caa8b3-6e5e-4359-94cb-68bf9f77c6d0"/>
+			<Metadata name="Document.РаспределениеЗатрат.TabularSection.Затраты.Attribute.рзп_Проект" id="25726a6a-16cd-4598-a1c1-0619665d1005"/>
+			<Metadata name="Document.РаспределениеЗатрат.TabularSection.Продукция" id="c5608b49-a8f8-4e13-9338-c5bd3c0c190d"/>
+			<Metadata name="Document.РаспределениеЗатрат.TabularSection.Продукция.Attribute.рзп_Проект" id="23988398-5295-4251-8eec-d51cf3e52fd5"/>
+			<Metadata name="Document.РаспределениеЗатрат.TabularSection.РаспределениеЗатрат" id="6d7755a9-dd82-4e4b-9b73-c6d55985b94f"/>
+			<Metadata name="Document.РаспределениеЗатрат.TabularSection.РаспределениеЗатрат.Attribute.рзп_Проект" id="a3b572af-7f4c-4a4b-a76b-4c446a1264b7"/>
+		</Metadata>
+		<Metadata name="Document.РаспределениеЗатрат.Form.ФормаДокумента" id="4cc9e148-e093-42bb-90dd-e94b657eb4df" configVersion="e03ad10ba8842326f68c36c10a421ce700000000"/>
+		<Metadata name="Document.РаспределениеЗатрат.Form.ФормаДокумента.Form" id="4cc9e148-e093-42bb-90dd-e94b657eb4df.0" configVersion="d355bb8453dc3bebc99e3812c0fae18000000000"/>
+		<Metadata name="Document.РаспределениеЗатрат.ManagerModule" id="1177d586-9144-4ccb-b3c5-1e5e904839b5.2" configVersion="e5adce66457716179c52cfe1aa8d597b00000000"/>
+		<Metadata name="Document.РаспределениеЗатрат.ObjectModule" id="1177d586-9144-4ccb-b3c5-1e5e904839b5.0" configVersion="e402b8a27f005bfff34f4f008530606e00000000"/>
+		<Metadata name="Language.Русский" id="ac4f06e0-8d86-4e08-a943-6d5502aaa938" configVersion="cafffb4feda0a1c06a2e43a41a6c2f9c00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
